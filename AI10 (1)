@@ -1,0 +1,36 @@
+def Chatbot():
+    print("Welcome to gift Shop!")
+    print("\n-----------------\n")
+    
+    print("Enter 'exit' to end conversation!")
+    
+    while True:
+        user = input("Enter your query : ").lower()
+        
+        if user=="exit":
+            print("Thank you for having a chat!\n Have a nice Day!")
+            break
+        
+        if user in ["hi", "hello", "hey"]:
+            print("\nBot: Hello, How may I help you? ")
+            
+        elif user in ["i want to buy a gift", "show me a gift"]:
+            print("\nBot: For whom are you going to gift?")
+            
+        elif user in ["my daughter", "my sister", "my wife", "my girlfriend"]:
+            print("\nBot: I will show you some dolls, what is your budget?")
+            
+        elif user in ["my father", "my brother", "my husband", "my boyfrined"]:
+            print("\nBot: I will show you some watches, what is your budget?")
+            
+        elif user in ["800","900","1000"]:
+            print("\nBot: Yes, we have gifts in that range, I will show you some of them!")
+
+        elif int(user)<800:
+            print("\nBot: Sorry, unfortunately we don't have gifts in that range")
+            
+        else:
+            print("\nBot: Sorry I couldn't understand");
+            
+Chatbot()            
+        
